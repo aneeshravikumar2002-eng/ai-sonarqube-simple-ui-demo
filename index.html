@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI SonarQube Security Demo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI SonarQube UI Security Demo</h1>
+
+      <div class="card">
+        <h2>Login Panel</h2>
+
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
+
+        <button onclick="login()">Login</button>
+        <button onclick="checkPasswordStrength()">Check Password Strength</button>
+      </div>
+
+      <div class="card">
+        <h2>Calculator</h2>
+
+        <input type="text" id="expression" placeholder="Example: 2 + 2">
+        <button onclick="calculateExpression()">Calculate</button>
+      </div>
+
+      <p id="message"></p>
+    </div>
+
+    <script src="Bad/Insecure script.js"></script>
+  </body>
+</html>
