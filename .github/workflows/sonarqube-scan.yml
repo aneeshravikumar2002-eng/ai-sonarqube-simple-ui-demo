@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@<FULL_40_CHAR_COMMIT_SHA>
+        uses: actions/checkout@<CHECKOUT_SHA>
         with:
           fetch-depth: 0
 
