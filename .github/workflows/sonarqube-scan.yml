@@ -13,11 +13,11 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@<FULL_40_CHAR_COMMIT_SHA>
         with:
           fetch-depth: 0
 
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@master
+        uses: SonarSource/sonarqube-scan-action@<713881670b6b3676cda39549040e2d88c70d582e  refs/tags/v8.2.0>
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
